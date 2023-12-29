@@ -1,0 +1,67 @@
+<html>
+
+<head></head>
+
+<body>
+  <form action="" method="POST">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome"
+      minlength="3" maxlength="128" required>
+
+    <br><br>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
+      required>
+
+    <br><br>
+
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha"
+      placeholder="Digite sua senha" minlength="8" maxlength="16" required>
+
+    <br><br>
+
+    <label for="senha2">Repita a senha</label>
+    <input type="password" id="senha2" name="senha2"
+      placeholder="Digite a mesma senha" minlength="8" maxlength="16" required>
+
+    <br><br>
+
+    <label for="cidade">Qual a sua cidade?</label>
+    <select id="cidade" name="cidade" required>
+      <option value="" disabled selected>Selecione a cidade</option>
+      <option value="Campo Grande - MS">Campo Grande - MS</option>
+      <option value="Rio de Janeiro - RJ">Rio de Janeiro - RJ</option>
+      <option value="São Paulo - SP">São Paulo - SP</option>
+    </select>
+
+    <br><br>
+
+    <label>Você é aluno ou professor?</label>
+    <br>
+    <input type="radio" name="alunoprof" id="aluno" required>
+    <label for="aluno">Aluno</label>
+    <br>
+    <input type="radio" name="alunoprof" id="professor" required>
+    <label for="professor">Professor</label>
+
+    <br><br>
+
+    <label for="mensagem">Quer deixar uma mensagem?</label>
+    <br>
+    <textarea id="mensagem" name="mensagem" cols="25" rows="5"
+      maxlength="1000"></textarea>
+
+    <br><br>
+
+    <input type="checkbox" id="termos" name="termos" required>
+    <label for="termos">Aceito os termos de uso</label>
+
+    <br><br>
+
+    <input type="submit" value="Cadastrar">
+  </form>
+</body>
+
+</html>

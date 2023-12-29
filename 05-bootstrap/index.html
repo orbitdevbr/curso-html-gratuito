@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <form action="" method="POST" class="container d-flex flex-column gap-4 w-50">
+    <h1 class="mt-5">Formulário HTML</h1>
+    <div>
+      <label class="form-label" for="nome">Nome</label>
+      <input class="form-control" type="text" id="nome" name="nome"
+        placeholder="Digite seu nome" minlength="3" maxlength="128" required>
+    </div>
+    <div>
+      <label class="form-label" for="email">E-mail</label>
+      <input class="form-control" type="email" id="email" name="email"
+        placeholder="Digite seu e-mail" required>
+    </div>
+    <div>
+      <label for="cidade">Qual a sua cidade?</label>
+      <select class="form-select" id="cidade" name="cidade" required>
+        <option value="" disabled selected>Selecione a cidade</option>
+        <option value="Campo Grande - MS">Campo Grande - MS</option>
+        <option value="Rio de Janeiro - RJ">Rio de Janeiro - RJ</option>
+        <option value="São Paulo - SP">São Paulo - SP</option>
+      </select>
+    </div>
+    <div>
+      <label>Você é aluno ou professor?</label>
+      <input class="form-check-input" type="radio" name="alunoprof" id="aluno"
+        required>
+      <label for="aluno" class="form-check-label">Aluno</label>
+      <input class="form-check-input" type="radio" name="alunoprof"
+        id="professor" required>
+      <label for="professor" class="form-check-label">Professor</label>
+    </div>
+    <div>
+      <input class="form-check-input" type="checkbox" id="termos" name="termos"
+        required>
+      <label for="termos" class="form-check-label">Aceito os termos de
+        uso</label>
+    </div>
+    <div>
+      <input type="submit" value="Cadastrar" class="btn btn-primary w-100">
+    </div>
+  </form>
+</body>
+
+</html>
